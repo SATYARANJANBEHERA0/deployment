@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/beauty.css' %}">
+</head>
+<body>
+    <div>
+        <h2>Welcome, {{ user.username }}</h2>
+        <ul>
+            <li><a href="{% url "meeting" %}">New Meeting</a></li>
+            <li><a href="">Join Meeting</a></li>
+            <li><a href="{% url "login" %}">Logout</a></li>
+        </ul>
+    </div>
+    
+    <!-- Video Call Section -->
+    <div id="video-call-section">
+        <!-- Your video call interface goes here -->
+        <!-- Include buttons for starting/stopping video, muting/unmuting audio, etc. -->
+    </div>
+
+    <!-- Include any additional JavaScript files or scripts here -->
+</body>
+</html>
